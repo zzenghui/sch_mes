@@ -3,8 +3,8 @@
 import { DataList, tableData, selectOptions } from "./data"
 import { ElMessage } from "element-plus"
 import { ref } from 'vue'
-let selectKey = ref("")
-let inputKey = ref("")
+let selectKey = ref<string>("")
+let inputKey = ref<string>("")
 const searchData = () => {
   ElMessage({
     type: "success",
