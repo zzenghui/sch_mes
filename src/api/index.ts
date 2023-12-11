@@ -18,7 +18,7 @@ const config = {
   // 设置超时时间
   timeout: ResultEnum.TIMEOUT as number,
   // 跨域时候允许携带凭证
-  withCredentials: true
+  withCredentials: true,
 };
 
 class RequestHttp {
@@ -44,7 +44,7 @@ class RequestHttp {
       },
       (error: AxiosError) => {
         return Promise.reject(error);
-      }
+      },
     );
 
     /**
@@ -82,7 +82,7 @@ class RequestHttp {
         // 服务器结果都没有返回(可能服务器错误可能客户端断网)，断网处理:可以跳转到断网页面
         if (!window.navigator.onLine) router.replace("/500");
         return Promise.reject(error);
-      }
+      },
     );
   }
 

@@ -21,7 +21,7 @@ const animate: Directive = {
       viewAddAnimate();
     };
     (el.parentNode as HTMLElement).onscroll = function () {};
-  }
+  },
 };
 
 export default animate;

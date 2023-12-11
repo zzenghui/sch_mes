@@ -35,7 +35,7 @@ export const useTheme = () => {
     document.documentElement.style.setProperty("--el-color-primary", val);
     document.documentElement.style.setProperty(
       "--el-color-primary-dark-2",
-      isDark.value ? `${getLightColor(val, 0.2)}` : `${getDarkColor(val, 0.3)}`
+      isDark.value ? `${getLightColor(val, 0.2)}` : `${getDarkColor(val, 0.3)}`,
     );
     for (let i = 1; i <= 9; i++) {
       const primaryColor = isDark.value ? `${getDarkColor(val, i / 10)}` : `${getLightColor(val, i / 10)}`;
@@ -50,7 +50,7 @@ export const useTheme = () => {
     if (!value) return body.removeAttribute("style");
     const styles: Record<Theme.GreyOrWeakType, string> = {
       grey: "filter: grayscale(1)",
-      weak: "filter: invert(80%)"
+      weak: "filter: invert(80%)",
     };
     body.setAttribute("style", styles[type]);
     const propName = type === "grey" ? "isWeak" : "isGrey";
@@ -106,6 +106,6 @@ export const useTheme = () => {
     changePrimary,
     changeGreyOrWeak,
     setAsideTheme,
-    setHeaderTheme
+    setHeaderTheme,
   };
 };

@@ -153,7 +153,7 @@ const {
   breadcrumbIcon,
   tabs,
   tabsIcon,
-  footer
+  footer,
 } = storeToRefs(globalStore);
 
 // 预定义主题颜色
@@ -167,7 +167,7 @@ const colorList = [
   "#e74c3c",
   "#fd726d",
   "#f39c12",
-  "#9b59b6"
+  "#9b59b6",
 ];
 
 // 设置布局方式

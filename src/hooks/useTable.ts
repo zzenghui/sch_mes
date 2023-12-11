@@ -13,7 +13,7 @@ export const useTable = (
   initParam: object = {},
   isPageable: boolean = true,
   dataCallBack?: (data: any) => any,
-  requestError?: (error: any) => void
+  requestError?: (error: any) => void,
 ) => {
   const state = reactive<Table.StateProps>({
     // 表格数据
@@ -25,14 +25,14 @@ export const useTable = (
       // 每页显示条数
       pageSize: 10,
       // 总条数
-      total: 0
+      total: 0,
     },
     // 查询参数(只包括查询)
     searchParam: {},
     // 初始化默认的查询参数
     searchInitParam: {},
     // 总参数(包含分页和查询参数)
-    totalParam: {}
+    totalParam: {},
   });
 
   /**
@@ -42,12 +42,12 @@ export const useTable = (
     get: () => {
       return {
         pageNum: state.pageable.pageNum,
-        pageSize: state.pageable.pageSize
+        pageSize: state.pageable.pageSize,
       };
     },
     set: (newVal: any) => {
       console.log("我是分页更新之后的值", newVal);
-    }
+    },
   });
 
   /**
@@ -117,7 +117,7 @@ export const useTable = (
     state.pageable.pageNum = 1;
     state.searchParam = {};
     // 重置搜索表单的时，如果有默认搜索参数，则重置默认的搜索参数
-    Object.keys(state.searchInitParam).forEach(key => {
+    Object.keys(state.searchInitParam).forEach((key) => {
       state.searchParam[key] = state.searchInitParam[key];
     });
     updatedTotalParam();
@@ -152,6 +152,6 @@ export const useTable = (
     reset,
     handleSizeChange,
     handleCurrentChange,
-    updatedTotalParam
+    updatedTotalParam,
   };
 };

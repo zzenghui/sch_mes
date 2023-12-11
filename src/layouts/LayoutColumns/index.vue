@@ -85,8 +85,8 @@ watch(
   },
   {
     deep: true,
-    immediate: true
-  }
+    immediate: true,
+  },
 );
 
 // change SubMenu

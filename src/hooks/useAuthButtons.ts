@@ -12,11 +12,11 @@ export const useAuthButtons = () => {
 
   const BUTTONS = computed(() => {
     let currentPageAuthButton: { [key: string]: boolean } = {};
-    authButtons.forEach(item => (currentPageAuthButton[item] = true));
+    authButtons.forEach((item) => (currentPageAuthButton[item] = true));
     return currentPageAuthButton;
   });
 
   return {
-    BUTTONS
+    BUTTONS,
   };
 };

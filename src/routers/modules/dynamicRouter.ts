@@ -26,7 +26,7 @@ export const initDynamicRouter = async () => {
         title: "无权限访问",
         message: "当前账号无任何菜单权限，请联系系统管理员！",
         type: "warning",
-        duration: 3000
+        duration: 3000,
       });
       userStore.setToken("");
       router.replace(LOGIN_URL);
@@ -34,7 +34,7 @@ export const initDynamicRouter = async () => {
     }
 
     // 3.添加动态路由
-    authStore.flatMenuListGet.forEach(item => {
+    authStore.flatMenuListGet.forEach((item) => {
       item.children && delete item.children;
       if (item.component && typeof item.component == "string") {
         item.component = modules["/src/views" + item.component + ".vue"];

@@ -1,7 +1,11 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>control</div>
+  <div class="control card">
+    <div class="date_list">
+      
+    </div>
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss"></style>

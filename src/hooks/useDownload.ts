@@ -13,14 +13,14 @@ export const useDownload = async (
   tempName: string,
   params: any = {},
   isNotify: boolean = true,
-  fileType: string = ".xlsx"
+  fileType: string = ".xlsx",
 ) => {
   if (isNotify) {
     ElNotification({
       title: "温馨提示",
       message: "如果数据庞大会导致下载缓慢哦，请您耐心等待！",
       type: "info",
-      duration: 3000
+      duration: 3000,
     });
   }
   try {

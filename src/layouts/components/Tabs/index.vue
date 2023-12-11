@@ -54,12 +54,12 @@ watch(
       title: route.meta.title as string,
       path: route.fullPath,
       name: route.name as string,
-      close: !route.meta.isAffix
+      close: !route.meta.isAffix,
     };
     tabStore.addTabs(tabsParams);
     route.meta.isKeepAlive && keepAliveStore.addKeepAliveName(route.name as string);
   },
-  { immediate: true }
+  { immediate: true },
 );
 
 // tabs 拖拽排序
@@ -72,20 +72,20 @@ const tabsDrop = () => {
       const currRow = tabsList.splice(oldIndex as number, 1)[0];
       tabsList.splice(newIndex as number, 0, currRow);
       tabStore.setTabs(tabsList);
-    }
+    },
   });
 };
 
 // 初始化需要固定的 tabs
 const initTabs = () => {
-  authStore.flatMenuListGet.forEach(item => {
+  authStore.flatMenuListGet.forEach((item) => {
     if (item.meta.isAffix && !item.meta.isHide && !item.meta.isFull) {
       const tabsParams = {
         icon: item.meta.icon,
         title: item.meta.title,
         path: item.path,
         name: item.name,
-        close: !item.meta.isAffix
+        close: !item.meta.isAffix,
       };
       tabStore.addTabs(tabsParams);
     }
@@ -100,7 +100,7 @@ const tabClick = (tabItem: TabsPaneContext) => {
 
 // Remove Tab
 const tabRemove = (fullPath: TabPaneName) => {
-  const name = tabStore.tabsMenuList.filter(item => item.path == fullPath)[0].name || "";
+  const name = tabStore.tabsMenuList.filter((item) => item.path == fullPath)[0].name || "";
   keepAliveStore.removeKeepAliveName(name);
   tabStore.removeTabs(fullPath as string, fullPath == route.fullPath);
 };

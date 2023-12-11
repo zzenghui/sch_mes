@@ -51,12 +51,12 @@ interface TreeFilterProps {
 const props = withDefaults(defineProps<TreeFilterProps>(), {
   id: "id",
   label: "label",
-  multiple: false
+  multiple: false,
 });
 
 const defaultProps = {
   children: "children",
-  label: props.label
+  label: props.label,
 };
 
 const treeRef = ref<InstanceType<typeof ElTree>>();
@@ -82,7 +82,7 @@ onBeforeMount(async () => {
 watch(
   () => props.defaultValue,
   () => nextTick(() => setSelected()),
-  { deep: true, immediate: true }
+  { deep: true, immediate: true },
 );
 
 watch(
@@ -93,11 +93,11 @@ watch(
       treeAllData.value = [{ id: "", [props.label]: "全部" }, ...props.data];
     }
   },
-  { deep: true, immediate: true }
+  { deep: true, immediate: true },
 );
 
 const filterText = ref("");
-watch(filterText, val => {
+watch(filterText, (val) => {
   treeRef.value!.filter(val);
 });
 
@@ -112,7 +112,7 @@ const filterNode = (value: string, data: { [key: string]: any }, node: any) => {
     parentNode = parentNode.parent;
     level++;
   }
-  return labels.some(label => label.indexOf(value) !== -1);
+  return labels.some((label) => label.indexOf(value) !== -1);
 };
 
 interface FilterEmits {

@@ -1,7 +1,7 @@
 /dist/*
 .local
 /node_modules/**
-
+/src/*
 **/*.svg
 **/*.sh
 

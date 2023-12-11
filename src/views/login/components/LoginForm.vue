@@ -52,19 +52,19 @@ type FormInstance = InstanceType<typeof ElForm>;
 const loginFormRef = ref<FormInstance>();
 const loginRules = reactive({
   username: [{ required: true, message: "请输入用户名", trigger: "blur" }],
-  password: [{ required: true, message: "请输入密码", trigger: "blur" }]
+  password: [{ required: true, message: "请输入密码", trigger: "blur" }],
 });
 
 const loading = ref(false);
 const loginForm = reactive<Login.ReqLoginForm>({
   username: "",
-  password: ""
+  password: "",
 });
 
 // login
 const login = (formEl: FormInstance | undefined) => {
   if (!formEl) return;
-  formEl.validate(async valid => {
+  formEl.validate(async (valid) => {
     if (!valid) return;
     loading.value = true;
     try {
@@ -85,7 +85,7 @@ const login = (formEl: FormInstance | undefined) => {
         title: getTimeState(),
         message: "欢迎登录 Geeker-Admin",
         type: "success",
-        duration: 3000
+        duration: 3000,
       });
     } finally {
       loading.value = false;

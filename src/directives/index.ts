@@ -15,15 +15,15 @@ const directivesList: { [key: string]: Directive } = {
   debounce,
   throttle,
   longpress,
-  animate
+  animate,
 };
 
 const directives = {
   install: function (app: App<Element>) {
-    Object.keys(directivesList).forEach(key => {
+    Object.keys(directivesList).forEach((key) => {
       app.directive(key, directivesList[key]);
     });
-  }
+  },
 };
 
 export default directives;
