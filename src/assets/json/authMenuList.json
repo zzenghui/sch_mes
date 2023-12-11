@@ -1,0 +1,480 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "path": "/home/index",
+      "name": "home",
+      "component": "/home/index",
+      "meta": {
+        "icon": "HomeFilled",
+        "title": "首页",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": true,
+        "isKeepAlive": true
+      }
+    },
+    {
+      "path": "/control",
+      "name": "control",
+      "component": "/control/index",
+      "meta": {
+        "icon": "Histogram",
+        "title": "控制台",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      }
+    },
+    {
+      "path": "/notice",
+      "name": "notice",
+      "component": "/notice/index",
+      "meta": {
+        "icon": "MessageBox",
+        "title": "通知公告",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      }
+    },
+    {
+      "path": "/major",
+      "name": "major",
+      "component": "/major/index",
+      "meta": {
+        "icon": "MessageBox",
+        "title": "专业管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      }
+    },
+    {
+      "path": "/eduAdmin",
+      "name": "eduAdmin",
+      "redirect": "/eduAdmin/openClasses",
+      "meta": {
+        "icon": "MessageBox",
+        "title": "教务管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/eduAdmin/openClasses",
+          "name": "openClasses",
+          "component": "/eduAdmin/openClasses/index",
+          "meta": {
+            "icon": "MessageBox",
+            "title": "公开课",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/eduAdmin/school",
+          "name": "school",
+          "component": "/eduAdmin/school/index",
+          "meta": {
+            "icon": "MessageBox",
+            "title": "学校管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/eduAdmin/student",
+          "name": "student",
+          "component": "/eduAdmin/student/index",
+          "meta": {
+            "icon": "MessageBox",
+            "title": "学生列表",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/eduAdmin/classTeacher",
+          "name": "classTeacher",
+          "component": "/eduAdmin/classTeacher/index",
+          "meta": {
+            "icon": "MessageBox",
+            "title": "班主任管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/eduAdmin/schoolTime",
+          "name": "schoolTime",
+          "component": "/eduAdmin/schoolTime/index",
+          "meta": {
+            "icon": "MessageBox",
+            "title": "入学时间",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/eduAdmin/IDCard",
+          "name": "IDCard",
+          "component": "/eduAdmin/IDCard/index",
+          "meta": {
+            "icon": "MessageBox",
+            "title": "身份证管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/eduAdmin/professionalCourses",
+          "name": "professionalCourses",
+          "component": "/eduAdmin/professionalCourses/index",
+          "meta": {
+            "icon": "MessageBox",
+            "title": "专业课",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/eduAdmin/learn",
+          "name": "learn",
+          "component": "/eduAdmin/learn/index",
+          "meta": {
+            "icon": "MessageBox",
+            "title": "课程学习记录",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/schedule",
+      "name": "schedule",
+      "redirect": "/schedule/all",
+      "meta": {
+        "icon": "Histogram",
+        "title": "学习进度",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/schedule/all",
+          "name": "all",
+          "component": "/schedule/all/index",
+          "meta": {
+            "icon": "Histogram",
+            "title": "全部",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/schedule/complete",
+          "name": "complete",
+          "component": "/schedule/complete/index",
+          "meta": {
+            "icon": "Histogram",
+            "title": "已完成",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/schedule/Incomplete",
+          "name": "Incomplete",
+          "component": "/schedule/Incomplete/index",
+          "meta": {
+            "icon": "Histogram",
+            "title": "未完成",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/homeWork",
+      "name": "homeWork",
+      "redirect": "/homeWork/exercises",
+      "meta": {
+        "icon": "MessageBox",
+        "title": "作业管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/homeWork/exercises",
+          "name": "exercises",
+          "component": "/homeWork/exercises/index",
+          "meta": {
+            "icon": "MessageBox",
+            "title": "习题集",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/homeWork/questionBank",
+          "name": "questionBank",
+          "component": "/homeWork/questionBank/index",
+          "meta": {
+            "icon": "MessageBox",
+            "title": "测验题库",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/homeWork/record",
+          "name": "record",
+          "component": "/homeWork/record/index",
+          "meta": {
+            "icon": "MessageBox",
+            "title": "测验记录",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/examination",
+      "name": "examination",
+      "redirect": "/examination/testPaper",
+      "meta": {
+        "icon": "MessageBox",
+        "title": "考试管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/examination/testPaper",
+          "name": "testPaper",
+          "component": "/examination/testPaper/index",
+          "meta": {
+            "icon": "MessageBox",
+            "title": "试卷管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/examination/testPaperQuestion",
+          "name": "testPaperQuestion",
+          "component": "/examination/testPaperQuestion/index",
+          "meta": {
+            "icon": "MessageBox",
+            "title": "试卷题库",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/examination/examRecords",
+          "name": "examRecords",
+          "component": "/examination/examRecords/index",
+          "meta": {
+            "icon": "MessageBox",
+            "title": "考试记录",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/directSeeding",
+      "name": "directSeeding",
+      "redirect": "/directSeeding/create",
+      "meta": {
+        "icon": "MessageBox",
+        "title": "直播管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/directSeeding/create",
+          "name": "create",
+          "component": "/directSeeding/create/index",
+          "meta": {
+            "icon": "MessageBox",
+            "title": "创建直播",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/admin",
+      "name": "admin",
+      "component": "/admin/index",
+      "meta": {
+        "icon": "MessageBox",
+        "title": "管理员管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      }
+    },
+    {
+      "path": "/authority",
+      "name": "authority",
+      "redirect": "/authority/menu",
+      "meta": {
+        "icon": "MessageBox",
+        "title": "权限管理",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/authority/menu",
+          "name": "menu",
+          "component": "/authority/menu/index",
+          "meta": {
+            "icon": "MessageBox",
+            "title": "菜单管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/authority/group",
+          "name": "group",
+          "component": "/authority/group/index",
+          "meta": {
+            "icon": "MessageBox",
+            "title": "权限组管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/authority/role",
+          "name": "role",
+          "component": "/authority/role/index",
+          "meta": {
+            "icon": "MessageBox",
+            "title": "角色管理",
+            "isLink": "",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/setting",
+      "name": "setting",
+      "component": "/setting/index",
+      "meta": {
+        "icon": "Setting",
+        "title": "系统设计",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      }
+    }
+  ],
+  "msg": "成功"
+}
