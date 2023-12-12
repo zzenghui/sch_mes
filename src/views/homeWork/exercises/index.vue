@@ -1,15 +1,11 @@
-<script setup lang="ts">
+<script setup lang='ts' >
 import { ref } from 'vue'
 import { tableData } from "./data"
 import type { tableDataType } from "./data"
 import { ElMessage } from "element-plus"
-const testKey = ref("")
-//处理编辑
+const courseKey = ref("")
+const exerName = ref("")
 const handleEdit = (row: tableDataType) => {
-  ElMessage({
-    type: "success",
-    message: "修改成功"
-  })
   console.log(row);
 }
 //分页功能
@@ -32,25 +28,31 @@ const handleCurrentChange = () => {
 <template>
   <div class="exercise card">
     <div class="operation">
-      <el-input v-model="testKey" style="width: 250px;" size="large" placeholder="请输入测验题目">
+      <el-select v-model="courseKey" placeholder="请选择课程" size="large">
+        <el-option v-for="item in 4" :key="item" :label="item" :value="item" />
+      </el-select>&nbsp;
+      <el-input v-model="exerName" style="width: 250px;" size="large" placeholder="请输入习题集名称">
         <template #append>
           <el-icon>
             <Search />
           </el-icon>
         </template>
-      </el-input>
+      </el-input> &nbsp;
+      <el-button type="primary" icon="Plus">导入习题集</el-button>
     </div>
     <el-table :data="tableData" border>
       <el-table-column label="#" type="index" align="center"></el-table-column>
-      <el-table-column label="题目标题" prop="title" align="center"></el-table-column>
-      <el-table-column label="题目类型" align="center">
+      <el-table-column label="习题集编号" prop="code" align="center"></el-table-column>
+      <el-table-column label="课程名称" prop="courseName" align="center"></el-table-column>
+      <el-table-column label="课程编码" prop="coding" align="center"></el-table-column>
+      <el-table-column label="习题集名称" prop="testName" align="center"></el-table-column>
+      <el-table-column label="习题集类型" align="center">
         <template #default="{ row }">
-          <el-tag type="success" v-if="row.cate == 1">单选题</el-tag>
-          <el-tag type="info" v-else-if="row.cate == 2">多选题</el-tag>
-          <el-tag type="danger" v-else>简答题</el-tag>
+          <el-tag type="warning" v-if="row.testCate == 1">综合作业 </el-tag>
+          <el-tag type="success" v-else>简答练习</el-tag>
         </template>
       </el-table-column>
-      <el-table-column label="题目分数" prop="fraction" align="center"></el-table-column>
+      <el-table-column label="习题集描述" prop="testDesc" align="center"></el-table-column>
       <el-table-column label="创建时间" prop="createTime" align="center"></el-table-column>
       <el-table-column label="更新时间" prop="updateTime" align="center"></el-table-column>
       <el-table-column label="状态" align="center">
@@ -62,19 +64,18 @@ const handleCurrentChange = () => {
         <template #default="{ row }">
           <el-button type="primary" icon="Edit" @click="handleEdit(row)"></el-button>
           <el-button type="danger" icon="Delete"></el-button>
-          <el-button type="success" icon="Setting"></el-button>
         </template>
       </el-table-column>
     </el-table>
     <div class="size">
-            <el-pagination v-model:current-page="currentPage4" v-model:page-size="pageSize4" :page-sizes="[5, 10, 15, 20]"
-              :background="true" layout="total, sizes, prev, pager, next, jumper" :total="50" @size-change="handleSizeChange"
-              @current-change="handleCurrentChange" 
-            />
-          </div>
+      <el-pagination v-model:current-page="currentPage4" v-model:page-size="pageSize4" :page-sizes="[5, 10, 15, 20]"
+        :background="true" layout="total, sizes, prev, pager, next, jumper" :total="50" @size-change="handleSizeChange"
+        @current-change="handleCurrentChange" 
+      />
+    </div>
   </div>
 </template>
-
+ 
 <style scoped lang="scss">
 .exercise {
   .el-table {
