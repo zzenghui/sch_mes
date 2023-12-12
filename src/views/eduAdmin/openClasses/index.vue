@@ -100,10 +100,5 @@ const handleCurrentChange = () => {
   .el-table {
     margin: 30px 0;
   }
-
-  .size {
-    display: flex;
-    justify-content: center;
-  }
 }
 </style>

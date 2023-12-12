@@ -42,3 +42,10 @@ const assemblySize = computed(() => globalStore.assemblySize);
 // element button config
 const buttonConfig = reactive({ autoInsertSpace: false });
 </script>
+
+<style>
+.size {
+  display: flex;
+  justify-content: center;
+}
+</style>
