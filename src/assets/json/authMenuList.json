@@ -34,7 +34,7 @@
       "name": "notice",
       "component": "/notice/index",
       "meta": {
-        "icon": "MessageBox",
+        "icon": "ChatDotRound",
         "title": "通知公告",
         "isLink": "",
         "isHide": false,
@@ -48,7 +48,7 @@
       "name": "major",
       "component": "/major/index",
       "meta": {
-        "icon": "MessageBox",
+        "icon": "CircleCheck",
         "title": "专业管理",
         "isLink": "",
         "isHide": false,
@@ -62,7 +62,7 @@
       "name": "eduAdmin",
       "redirect": "/eduAdmin/openClasses",
       "meta": {
-        "icon": "MessageBox",
+        "icon": "Operation",
         "title": "教务管理",
         "isLink": "",
         "isHide": false,
@@ -76,7 +76,7 @@
           "name": "openClasses",
           "component": "/eduAdmin/openClasses/index",
           "meta": {
-            "icon": "MessageBox",
+            "icon": "Comment",
             "title": "公开课",
             "isLink": "",
             "isHide": false,
@@ -90,7 +90,7 @@
           "name": "school",
           "component": "/eduAdmin/school/index",
           "meta": {
-            "icon": "MessageBox",
+            "icon": "Rank",
             "title": "学校管理",
             "isLink": "",
             "isHide": false,
@@ -104,7 +104,7 @@
           "name": "student",
           "component": "/eduAdmin/student/index",
           "meta": {
-            "icon": "MessageBox",
+            "icon": "DocumentChecked",
             "title": "学生列表",
             "isLink": "",
             "isHide": false,
@@ -118,7 +118,7 @@
           "name": "classTeacher",
           "component": "/eduAdmin/classTeacher/index",
           "meta": {
-            "icon": "MessageBox",
+            "icon": "DataLine",
             "title": "班主任管理",
             "isLink": "",
             "isHide": false,
@@ -132,7 +132,7 @@
           "name": "schoolTime",
           "component": "/eduAdmin/schoolTime/index",
           "meta": {
-            "icon": "MessageBox",
+            "icon": "Picture",
             "title": "入学时间",
             "isLink": "",
             "isHide": false,
@@ -146,7 +146,7 @@
           "name": "IDCard",
           "component": "/eduAdmin/IDCard/index",
           "meta": {
-            "icon": "MessageBox",
+            "icon": "PictureFilled",
             "title": "身份证管理",
             "isLink": "",
             "isHide": false,
@@ -160,7 +160,7 @@
           "name": "professionalCourses",
           "component": "/eduAdmin/professionalCourses/index",
           "meta": {
-            "icon": "MessageBox",
+            "icon": "MilkTea",
             "title": "专业课",
             "isLink": "",
             "isHide": false,
@@ -174,7 +174,7 @@
           "name": "learn",
           "component": "/eduAdmin/learn/index",
           "meta": {
-            "icon": "MessageBox",
+            "icon": "Box",
             "title": "课程学习记录",
             "isLink": "",
             "isHide": false,
@@ -204,7 +204,7 @@
           "name": "all",
           "component": "/schedule/all/index",
           "meta": {
-            "icon": "Histogram",
+            "icon": "Money",
             "title": "全部",
             "isLink": "",
             "isHide": false,
@@ -218,7 +218,7 @@
           "name": "complete",
           "component": "/schedule/complete/index",
           "meta": {
-            "icon": "Histogram",
+            "icon": "QuartzWatch",
             "title": "已完成",
             "isLink": "",
             "isHide": false,
@@ -232,7 +232,7 @@
           "name": "Incomplete",
           "component": "/schedule/Incomplete/index",
           "meta": {
-            "icon": "Histogram",
+            "icon": "TakeawayBox",
             "title": "未完成",
             "isLink": "",
             "isHide": false,
@@ -248,7 +248,7 @@
       "name": "homeWork",
       "redirect": "/homeWork/exercises",
       "meta": {
-        "icon": "MessageBox",
+        "icon": "Ship",
         "title": "作业管理",
         "isLink": "",
         "isHide": false,
@@ -262,7 +262,7 @@
           "name": "exercises",
           "component": "/homeWork/exercises/index",
           "meta": {
-            "icon": "MessageBox",
+            "icon": "Lightning",
             "title": "习题集",
             "isLink": "",
             "isHide": false,
@@ -276,7 +276,7 @@
           "name": "questionBank",
           "component": "/homeWork/questionBank/index",
           "meta": {
-            "icon": "MessageBox",
+            "icon": "ChromeFilled",
             "title": "测验题库",
             "isLink": "",
             "isHide": false,
@@ -290,7 +290,7 @@
           "name": "record",
           "component": "/homeWork/record/index",
           "meta": {
-            "icon": "MessageBox",
+            "icon": "SuitcaseLine",
             "title": "测验记录",
             "isLink": "",
             "isHide": false,
@@ -306,7 +306,7 @@
       "name": "examination",
       "redirect": "/examination/testPaper",
       "meta": {
-        "icon": "MessageBox",
+        "icon": "Calendar",
         "title": "考试管理",
         "isLink": "",
         "isHide": false,
@@ -320,7 +320,7 @@
           "name": "testPaper",
           "component": "/examination/testPaper/index",
           "meta": {
-            "icon": "MessageBox",
+            "icon": "ColdDrink",
             "title": "试卷管理",
             "isLink": "",
             "isHide": false,
@@ -334,7 +334,7 @@
           "name": "testPaperQuestion",
           "component": "/examination/testPaperQuestion/index",
           "meta": {
-            "icon": "MessageBox",
+            "icon": "GobletSquareFull",
             "title": "试卷题库",
             "isLink": "",
             "isHide": false,
@@ -348,7 +348,7 @@
           "name": "examRecords",
           "component": "/examination/examRecords/index",
           "meta": {
-            "icon": "MessageBox",
+            "icon": "Place",
             "title": "考试记录",
             "isLink": "",
             "isHide": false,
@@ -364,7 +364,7 @@
       "name": "directSeeding",
       "redirect": "/directSeeding/create",
       "meta": {
-        "icon": "MessageBox",
+        "icon": "CameraFilled",
         "title": "直播管理",
         "isLink": "",
         "isHide": false,
@@ -378,7 +378,7 @@
           "name": "create",
           "component": "/directSeeding/create/index",
           "meta": {
-            "icon": "MessageBox",
+            "icon": "Collection",
             "title": "创建直播",
             "isLink": "",
             "isHide": false,
@@ -394,7 +394,7 @@
       "name": "admin",
       "component": "/admin/index",
       "meta": {
-        "icon": "MessageBox",
+        "icon": "Notebook",
         "title": "管理员管理",
         "isLink": "",
         "isHide": false,
@@ -408,7 +408,7 @@
       "name": "authority",
       "redirect": "/authority/menu",
       "meta": {
-        "icon": "MessageBox",
+        "icon": "Tools",
         "title": "权限管理",
         "isLink": "",
         "isHide": false,
@@ -422,7 +422,7 @@
           "name": "menu",
           "component": "/authority/menu/index",
           "meta": {
-            "icon": "MessageBox",
+            "icon": "Open",
             "title": "菜单管理",
             "isLink": "",
             "isHide": false,
@@ -436,7 +436,7 @@
           "name": "group",
           "component": "/authority/group/index",
           "meta": {
-            "icon": "MessageBox",
+            "icon": "ZoomIn",
             "title": "权限组管理",
             "isLink": "",
             "isHide": false,
@@ -450,7 +450,7 @@
           "name": "role",
           "component": "/authority/role/index",
           "meta": {
-            "icon": "MessageBox",
+            "icon": "User",
             "title": "角色管理",
             "isLink": "",
             "isHide": false,
