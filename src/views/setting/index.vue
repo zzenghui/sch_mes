@@ -99,7 +99,7 @@ v-model:file-list="fileList" :on-preview="handlePictureCardPreview" action="#" :
               </el-icon>
             </el-upload>
             <el-dialog v-model="dialogVisible">
-              <img w-full :src="dialogImageUrl" alt="Preview Image" />
+              <img w-full :src="dialogImageUrl" alt="Preview Image" style="width: 100%;height: 100%;" />
             </el-dialog>
           </el-form-item>
           <el-form-item label="百度统计代码" prop="code">
