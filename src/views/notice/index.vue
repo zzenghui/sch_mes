@@ -102,7 +102,8 @@ const handleCurrentChange = () => {
     </el-table>
     <!-- 分页功能 -->
     <div class="size">
-      <el-pagination v-model:current-page="currentPage4" v-model:page-size="pageSize4" :page-sizes="[5, 10, 15, 20]"
+      <el-pagination
+v-model:current-page="currentPage4" v-model:page-size="pageSize4" :page-sizes="[5, 10, 15, 20]"
         :background="true" layout="total, sizes, prev, pager, next, jumper" :total="50" @size-change="handleSizeChange"
         @current-change="handleCurrentChange"
       />

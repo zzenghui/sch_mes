@@ -69,7 +69,8 @@ const exportXlsx = () => {
       <el-table-column label="学习时间" prop="learnTime" align="center"></el-table-column>
     </el-table>
     <div class="size">
-        <el-pagination v-model:current-page="currentPage4" v-model:page-size="pageSize4" :page-sizes="[5, 10, 15, 20]"
+        <el-pagination
+v-model:current-page="currentPage4" v-model:page-size="pageSize4" :page-sizes="[5, 10, 15, 20]"
           :background="true" layout="total, sizes, prev, pager, next, jumper" :total="50" @size-change="handleSizeChange"
           @current-change="handleCurrentChange" 
           />
